@@ -1,0 +1,36 @@
+#TopBar {
+    background: #ff8732;
+    height: 20%;
+    width: 100%;
+}
+
+#TopBar #TopBarItems {
+    width: 30%;
+    height: 100%;
+}
+
+.Logo {
+    width: 5vw;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#MainSection {
+    background: #f5ebdc;
+    height: 60vh;
+    width: 100%;
+}
+
+#BottomBar {
+    background: #ff8732;
+    height: 20vh;
+    width: 100%;
+}
+
+#BottomBar #BottomBarItems {
+    width: 30%;
+    height: 100%;
+}

@@ -26,13 +26,21 @@
         </div>
         <div id="MainSection">  
             <div id="Video" class="centerHori centerVert">
-                <iframe 
+                <div id="loading" class="rotate">
+
+                </div>
+                <video
                 width="420" 
                 height="315" 
-                src="https://www.youtube.com/embed/Acz-AL1JyAk?autoplay=1&mute=1">
-                </iframe>
+                controls
+                onloadstart="loading();"
+                id="video"
+                >
+
+                <source src="assets/Harveys Video.mp4" type="video/mp4">
+                </video>
                 <div id="getJob" class="centerHori">
-                    <input id="clickMe" type="button" value="Get Job" onclick="hired();"/>        
+                    <button onclick="hired();">Get Job</button>
                 </div>
             </div>
         </div>

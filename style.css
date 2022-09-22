@@ -10,10 +10,41 @@
     font-family: 'Flame sans', sans-serif;
 }
 
-.spin {
-    animation-name: spin;
+
+@keyframes test {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}
+
+@keyframes spin {
+    0% {transform: rotate(0);}
+    25% {transform: rotate(90);}
+    50% {transform: rotate(180);}
+    75% {transform: rotate(270);}
+    100% {transform: rotate(360);}
+
+    /* 0% { background-color: blue; }
+    25% { background-color: red; }
+    50% { background-color: yellow; }
+    75% { background-color: green; }
+    100% { background-color: greenyellow; } */
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}
+
+.rotate {
+    animation-name: rotation;
     animation-iteration-count: infinite;
-    animation-duration: 4s;
+    animation-duration: 1s;
 }
 
 #TopBar #TopBarItems {
@@ -42,19 +73,8 @@
     text-align: center;
 }
 
-@keyframes test {
-    0%   {background-color: red;}
-    25%  {background-color: yellow;}
-    50%  {background-color: blue;}
-    100% {background-color: green;}
-}
-
-@keyframes spin {
-    0% {transform: rotate(0);}
-    25% {transform: rotate(90);}
-    50% {transform: rotate(180);}
-    50% {transform: rotate(270);}
-    100% {transform: rotate(360);}
+#audio {
+    top: 50vh;
 }
 
 #MainSection {
